@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>BankDash.</title>
+</head>
+<body>
+    <div class="app">
+        <nav class="navbar">
+            <div class="logo">
+                <!-- <img src="assets/Logo.png" alt=""> -->
+            </div>
+    
+            <div class="navbar-items">
+                <div class="navbar-item">
+                    <img class="navbar-icon" src="assets/icons/home.svg" alt="">
+                    <a href="#" class="navbar-link">Dashboard</a>
+                </div>
+                <div class="navbar-item">
+                    <img class="navbar-icon" src="assets/icons/transfer.svg" alt="">
+                    <a href="#" class="navbar-link">Transactions</a>
+                </div>
+                <div class="navbar-item">
+                    <img class="navbar-icon" src="assets/icons/user.svg" alt="">
+                    <a href="#" class="navbar-link">Accounts</a>
+                </div>
+                <div class="navbar-item">
+                    <img class="navbar-icon" src="assets/icons/economic-investment.svg" alt="">
+                    <a href="#" class="navbar-link">Investments</a>
+                </div>
+                <div class="navbar-item">
+                    <img class="navbar-icon" src="assets/icons/credit-card.svg" alt="">
+                    <a href="#" class="navbar-link">Credit Cards</a>
+                </div>
+                <div class="navbar-item">
+                    <img class="navbar-icon" src="assets/icons/loan.svg" alt="">
+                    <a href="#" class="navbar-link">Loans</a>
+                </div>
+                <div class="navbar-item">
+                    <img class="navbar-icon" src="assets/icons/service.svg" alt="">
+                    <a href="#" class="navbar-link">Services</a>
+                </div>
+                <div class="navbar-item">
+                    <img class="navbar-icon" src="assets/icons/econometrics.svg" alt="">
+                    <a href="#" class="navbar-link">My Privileges</a>
+                </div>
+                <div class="navbar-item">
+                    <img class="navbar-icon" src="assets/icons/settings.svg" alt="">
+                    <a href="#" class="navbar-link is-navabar-link-active">Setting</a>
+                </div>
+            </div>
+        </nav>
+    
+        <header class="header">
+            <h1 class="header-title">Setting</h1>
+    
+            <div class="header-items">
+                <div class="header-item search-field">
+                    <img class="header-icon" src="assets/icons/magnifying-glass.svg" alt="">
+                    <input type="text" class="header-input" placeholder="Search for something">
+                </div>
+                <div class="header-item header__button">
+                    <img class="header-icon" src="assets/icons/settings 1.svg" alt="">
+                </div>
+                <div class="header-item header__button">
+                    <img class="header-icon" src="assets/icons/notification.svg" alt="">
+                </div>
+                <img class="header__profile-picture" src="assets/profile-picture.png" alt="">
+            </div>
+        </header>
+
+        <header class="mobile-header">
+            <div class="mobile-header-items">
+                <div class="header-burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <h1 class="header-title">Setting</h1>
+                <img class="header__profile-picture" src="assets/profile-picture.png" alt="">
+            </div>
+            <div class="header-item search-field">
+                <img class="header-icon" src="assets/icons/magnifying-glass.svg" alt="">
+                <input type="text" class="header-input" placeholder="Search for something">
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="setting">
+                <div class="setting__header">
+                    <p class="setting__header-title is-link-active">Edit Profile</p>
+                    <p class="setting__header-title">Preferences</p>
+                    <p class="setting__header-title">Security</p>
+                </div>
+
+                <div class="setting__content">
+                    <div class="setting__profile-img-container">
+                        <img class="setting__profile-img" src="assets/profile-picture.png" alt="">
+                        <div class="setting__profile-img-edit">
+                            <img class="setting__profile-img-edit-icon" src="assets/icons/pencil.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="setting__content-column">
+                        <div class="setting__content-item">
+                            <p class="setting__content-item-title">
+                                Your Name
+                            </p>
+                            <input type="text" class="setting__content-item-input" placeholder="Charlene Reed ">
+                        </div>
+                        <div class="setting__content-item">
+                            <p class="setting__content-item-title">
+                                Email
+                            </p>
+                            <input type="email" class="setting__content-item-input" placeholder="charlenereed@gmail.com">
+                        </div>
+                        <div class="setting__content-item">
+                            <p class="setting__content-item-title">
+                                Date of Birth
+                            </p>
+                            <input type="date" class="setting__content-item-input" placeholder="25 January 1990" id="dateInput">
+                            <input type="text" id="formattedDateInput" class="setting__content-item-input" readonly placeholder="25 January 1990">
+                            <img src="assets/icons/arrow-down.svg" alt="Calendar" class="custom-calendar-icon" onclick="document.getElementById('dateInput').showPicker();">
+                        </div>
+                        <div class="setting__content-item">
+                            <p class="setting__content-item-title">
+                                Permanent Address
+                            </p>
+                            <input type="text" class="setting__content-item-input" placeholder="San Jose, California, USA">
+                        </div>
+                        <div class="setting__content-item">
+                            <p class="setting__content-item-title">
+                                Postal Code
+                            </p>
+                            <input type="number" class="setting__content-item-input" placeholder="45962">
+                        </div>
+                    </div>
+                    <div class="setting__content-column">
+                        <div class="setting__content-item">
+                            <p class="setting__content-item-title">
+                                User Name
+                            </p>
+                            <input type="text" class="setting__content-item-input" placeholder="Charlene Reed">
+                        </div>
+                        <div class="setting__content-item">
+                            <p class="setting__content-item-title">
+                                Password
+                            </p>
+                            <input type="password" class="setting__content-item-input" placeholder="**********">
+                        </div>
+                        <div class="setting__content-item">
+                            <p class="setting__content-item-title">
+                                Present Address
+                            </p>
+                            <input type="text" class="setting__content-item-input" placeholder="San Jose, California, USA">
+                        </div>
+                        <div class="setting__content-item">
+                            <p class="setting__content-item-title">
+                                City
+                            </p>
+                            <input type="text" class="setting__content-item-input" placeholder="San Jose">
+                        </div>
+                        <div class="setting__content-item">
+                            <p class="setting__content-item-title">
+                                Country
+                            </p>
+                            <input type="text" class="setting__content-item-input" placeholder="USA">
+                        </div>
+
+                        <button class="setting__content-item-save-btn">
+                            Save
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="js/script.js" type="application/javascript"></script>
+</body>
+</html>
